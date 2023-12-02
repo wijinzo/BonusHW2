@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        .row {
+            overflow: hidden; 
+        }
+
+        .float-left {
+            float: left;
+            width: 49%; /* Adjust the width as needed */
+            margin-right: 2%; /* Adjust the margin as needed */
+        }
+
+        .float-right {
+            float: right;
+            width: 49%; /* Adjust the width as needed */
+            margin-right: 0; /* No margin on the right for the last element */
+        }
+
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        textarea {
+            resize: none; /* Make textarea not resizable */
+        }
+
+        img {
+            width: 100%; /* Make the image fill the container */
+            border-radius: 10px; /* Optional: Add border-radius to the image */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text"  name="name" placeholder = "name" required>
+        </div>
+
+        <div class="row">
+            <div class="form-group float-left">
+                <label for="id">Student ID:</label>
+                <input type="text"  name="Student ID" placeholder="XXXXXXXXX(9)" required>
+            </div>
+
+            <div class="form-group float-right">
+                <label for="Department">Department:</label>
+                <input type="text"  name="Department" placeholder="Department" required>
+            </div>
+        </div>
+        
+        <div class="form-group ">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="name@domain.com" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+
+        <!-- Add the image below the form elements -->
+        <div>
+            <label for="pic">Picture:</label>
+            <img src="https://truth.bahamut.com.tw/s01/202204/7d3049a8ec046a6aa46b8baa54c9a896.JPG"Image">
+        </div>
+    </div>
+</body>
+
+</html>
